@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #202225;
+}
+
+header{
+    padding: 32px 0;
+    text-align: center;
+    background-color: #202225;
+}
+
+header h1{
+    margin-top: 8px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+header h4{
+    margin-top: 4px;
+    color: #7289da;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content{
+    border-radius: 16px 16px 0 0;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #36393F;
+    display: flex;
+    align-items: center;
+}
+
+.controls{
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls .controls-down,
+.controls .controls-up{
+    height: 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+}
+
+.controls .center{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.controls .center .box{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.controls .center .controls-left,
+.controls .center .controls-right{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.controls .center .controls-left input,
+.controls .center .controls-right input{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 100%;
+    height: 100%;
+}
+
+
+#top-right-x,
+#bottom-right-x{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+ }
+
+ #top-left-y,
+ #top-right-y{
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+ }
+
+
+
+
+
+
+
+ /* RANGE */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CSS Border Radius Tool</title>
+</head>
+<body>
+    <header>
+        <h1>Border Radius Tool</h1>
+        <h4>8 point full control</h4>
+    </header>
+    <div class="content">
+        <div class="controls">
+            <div class="controls-up">
+                <div class="empty"></div>
+
+                <input type="range" min="0" max="100" value="20" reversed id="top-left-x">
+
+
+                <input type="range" min="0" max="100" value="20" reversed id="top-right-x">
+
+                <div class="empty"></div>
+            </div>
+
+
+            <div class="center">
+                <div class="controls-left">
+    
+                <input type="range" min="0" max="100" value="20" reversed id="top-left-y">
+
+       
+                <input type="range" min="0" max="100" value="20" reversed id="bottom-left-y">
+
+                </div>
+
+                <div class="box">
+
+                </div>
+                
+                <div class="controls-right">
+
+                <input type="range" min="0" max="100" value="20" reversed id="top-right-y">
+                <input type="range" min="0" max="100" value="20" reversed id="bottom-right-y">
+
+                </div>
+            </div>
+
+
+            <div class="controls-down">
+                <div class="empty"></div>
+
+                    <input type="range" min="0" max="100" value="20" reversed id="bottom-left-x">
+
+
+                    <input type="range" min="0" max="100" value="20" reversed id="bottom-right-x">
+
+                <div class="empty"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
